@@ -88,7 +88,6 @@ slider.addEventListener('input', function() {
     updateCameraPosition(models[modelIndex]); // Update camera to focus on the new model
 });
 
-
 // Event listener for window resize to adjust camera and renderer
 window.addEventListener('resize', onWindowResize, false);
 function onWindowResize() {
