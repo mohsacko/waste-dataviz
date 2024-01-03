@@ -94,3 +94,34 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.content {
+  display: flex;
+  align-items: center; /* Adjust vertical alignment as needed */
+  justify-content: center; /* Adjust horizontal alignment as needed */
+  width: 100%; /* Ensure full width */
+  height: 600px; /* Adjust height as needed */
+}
+
+#scene-container {
+  width: 70%;
+  height: 600px;
+  position: relative; /* Needed for absolute positioning of children */
+}
+
+#modelSlider {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%); /* Center the slider */
+  z-index: 10; /* Ensure it's above the model */
+}
+
+.chart-container {
+  width: 30%; /* Chart container width */
+  padding-left: 20px; /* Space between model and chart */
+}
+
+#myChart {
+  width: 100%; /* Full width of its container */
+  height: 100%; /* Full height of its container */
+}

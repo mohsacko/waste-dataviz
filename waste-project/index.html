@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>My first three.js app</title>
-    <style>
-        body { margin: 0; }
-        #scene-container { width: 50%; height: 50vh; }
-    </style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Dataviz</title>
+    <link rel="stylesheet" href="style.css"> <!-- Adjust the href value based on your file's location -->
+    <!-- Other head elements -->
 </head>
 <body>
-  <input type="range" id="modelSlider" min="1" max="4" value="1" step="1">
-  <div id="scene-container"></div>
   <!-- Slider for selecting models -->
+  <div class="content">
+    <div id="scene-container">
+        <input type="range" id="modelSlider" min="1" max="4" value="1" step="1">
+        <!-- Slider for selecting models -->
+    </div>
+    <div class="chart-container">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+
+
   <script type="module" src="/main.js"></script>
-    
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
 </body>
 </html>
 
